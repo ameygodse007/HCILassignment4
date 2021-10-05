@@ -1,0 +1,149 @@
+* {
+  margin: 0%;
+}
+
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #fb5951;
+  color: white;
+}
+
+.promo-area {
+  background: #fbfbfb;
+  color: #fff;
+  padding: 40px 0 40px;
+}
+
+.promo-area .zigzag-bottom,
+.brands-area .zigzag-bottom {
+  background: #f4f4f4;
+}
+
+.single-shop-product h2 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+.product-option-shop {
+  margin-top: 15px;
+}
+
+.single-shop-product {
+  margin-bottom: 50px;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+  color: #5a88ca;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+.product-option-shop {
+  background-color: #fb5951;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.add_to_cart_button {
+  color: white;
+}
+
+@media only screen and (max-width: 767px) {
+  .product-bit-title h2 {
+    font-size: 35px;
+    padding: 40px 0;
+  }
+}
+.product-bit-title h2 {
+  font-family: Montserrat, sans-serif;
+  font-size: 50px;
+  font-weight: 200;
+  margin: 0;
+  padding: 50px 0;
+  color: #fff;
+}
+
+.footer-wid-title {
+  color: white;
+}
+
+@media (min-width: 576px) {
+  .containers,
+  .containers-sm {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .containers,
+  .containers-lg,
+  .containers-md,
+  .containers-sm {
+    max-width: 100%;
+  }
+}
+
+.footer-wid-title {
+  font-family: Montserrat, sans-serif;
+  font-size: 30px;
+  font-weight: 100;
+  color: #fff;
+}
+
+p {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+.newsletter-form input[type="submit"] {
+  background: none repeat scroll 0 0 #fb5951;
+  border: medium none;
+  color: #fff;
+  display: inline-block;
+  font-size: 18px;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  margin-top: 1.2rem;
+  border: 1px solid #fb5951;
+}
+
+li a {
+  color: #999;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+p a {
+  color: black;
+  text-decoration: none;
+}
