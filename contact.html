@@ -1,113 +1,241 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact</title>
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/style.css">
-
-
-  <!-- Awesome font  -->
-  <link rel="stylesheet" href="css/font-awesome.css">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-
-
-  
-
-
-
-</head>
-<body>
-  <div class="topnav">
-    <a  href="index.html">Home</a>
-    <a href="product.html">Products</a>
-    <a class="active" href="contact.html">Contact</a>
-    <a href="about.html">About</a>
-  </div>
-
-      <ul class="horizontal">
-        <li><a class="active" href="javascript:void(0)">Home</a></li>
-        <li><a href="javascript:void(0)">News</a></li>
-        <li><a href="javascript:void(0)">Contact</a></li>
-        <li class="rightli" style="float:right"><a href="javascript:void(0)">About</a></li>
-      </ul>
-   
-      <Section class="contact">
-          <div class="container">
-              <h2>Contact Us</h2>
-              <div class="row">
-                  <div class="col-6 m-auto">
-                    <form>
-                        <div class="form-row">
-                          <div class="form-group col-md-6">
-                            <label for="validationCustom01">First Name</label>
-                            <input type="text" class="form-control" id="inputEmail4" placeholder="First Name">
-                          </div>
-                          <div class="form-group col-md-6">
-                            <label for="validationCustom02">Last Name</label>
-                            <input type="text" class="form-control" id="inputPassword4" placeholder="Last Name">
-                          </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputEmail4">Email</label>
-                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-                        </div>
-                        <div class="form-group">
-                          <label for="inputAddress2">Message</label>
-                          <input type="text" class="form-control" id="inputAddress2" placeholder="Comment ...">
-                        </div>
-                        
-                        
-                        <button type="submit" class="btn btn-primary">Sign in</button>
-                      </form>
-
-                  </div>
-              </div>
+<html>
+  <head>
+    <title>Contact form</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        background-image: url(https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fG1vdW50YWluc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+        font-size: 14px;
+        color: #666;
+      }
+      h1 {
+        margin: 0 0 20px;
+        font-size: 2.5rem;
+        color: black;
+        font-weight: revert;
+      }
+      p {
+        margin: 0 0 5px;
+      }
+      .main-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+        background: #fb5951;
+      }
+      form {
+        padding: 25px;
+        margin: 25px;
+        box-shadow: 0 2px 5px #f5f5f5;
+        background: #f5f5f5;
+      }
+      .fas {
+        margin: 25px 10px 0;
+        font-size: 72px;
+        color: #fff;
+      }
+      .fa-envelope {
+        transform: rotate(-20deg);
+      }
+      .fa-at,
+      .fa-mail-bulk {
+        transform: rotate(10deg);
+      }
+      input,
+      textarea {
+        width: calc(100% - 18px);
+        padding: 8px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        border: 1px solid #fb5951;
+        outline: none;
+      }
+      input::placeholder {
+        color: #666;
+      }
+      button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        background: #1c87c9;
+        font-size: 16px;
+        font-weight: 400;
+        color: #fff;
+      }
+      button:hover {
+        background: #fb5951;
+      }
+      @media (min-width: 568px) {
+        .main-block {
+          flex-direction: row;
+        }
+        .left-part,
+        form {
+          width: 50%;
+        }
+        .fa-envelope {
+          margin-top: 0;
+          margin-left: 20%;
+        }
+        .fa-at {
+          margin-top: -10%;
+          margin-left: 65%;
+        }
+        .fa-mail-bulk {
+          margin-top: 2%;
+          margin-left: 28%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="index.html">Home</a>
+      <a href="product.html">Products</a>
+      <a class="active" href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+      <a href="login.html">Login</a>
+    </div>
+    <div
+      class="contact"
+      style="
+        background-color: #e6e6e6;
+        height: 93.2vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: Ubuntu, sans-serif;
+      "
+    >
+      <div
+        class="inner"
+        style="
+          background-color: white;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          height: 80%;
+          width: 80%;
+          border-radius: 20px;
+        "
+      >
+        <div class="main-block">
+          <form action="/" style="border-radius: 20px">
+            <h1>Contact Us</h1>
+            <div class="info">
+              <input
+                class="fname"
+                type="text"
+                name="name"
+                placeholder="Full name"
+              />
+              <input type="text" name="name" placeholder="Email" />
+              <input type="text" name="name" placeholder="Phone number" />
+              <input type="text" name="name" placeholder="Website" />
+            </div>
+            <p>Message</p>
+            <div>
+              <textarea rows="6"></textarea>
+            </div>
+            <button type="submit" href="/">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div
+      class="containers"
+      style="
+        background-color: #333333;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+      "
+    >
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div class="footer-about-us" style="color: white">
+            <h3>Widehavon</h3>
+            <h6 style="font-size: 16px">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Perferendis sunt id doloribus vero quam laborum quas alias dolores
+              blanditiis iusto consequatur, modi aliquid eveniet eligendi iure
+              eaque ipsam iste, pariatur omnis sint! Suscipit, debitis,
+              quisquam. Laborum commodi veritatis magni at?
+            </h6>
+            <img src="logo.png" style="width: 60%" />
           </div>
-      </Section>
-      
+        </div>
 
-      <section class="main-footer">
-        <div class="container">
-        <div class="row">
-            <div class="col-lg-4 col-12 col-md-4 col-sm-4">
-              <img src="images/logo.png" alt="" class="logo">
-              <p>The Largest Store For Online Shopping In Pakistan To Provide Thousands Of Products At One Stop Like Mobiles, Cameras, Fashion, Computers</p>
-            </div>
-  
-            <div class="col-lg-4 col-12 col-md-4 col-sm-4">
-              <h3>Social Media</h3>
-              <a href="https://www.facebook.com/AkhtarHussain.Official"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-              <a href="https://twitter.com/AkhtarOfficial"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-              
-              <a href="https://www.instagram.com/akhtar.official"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-              <a href="https://www.linkedin.com/in/akhtarofficial/"><i class="fa fa-linkedin" aria-hidden="true"></i></i></a>
-              
-            </div>
-  
-  
-            <div class="col-lg-4 col-12 col-md-4 col-sm-4">
-              <h3>Address</h3>
-              <h6>Dr Zia-ud-Din Ahmed Rd، Civil Lines, Karachi, Karachi City, Sindh</h6>
-  <h6><i class="fa fa-phone" aria-hidden="true"></i> +923042275725</h6>
-  <h6></h6>
-              <h6><i class="fa fa-envelope-o" aria-hidden="true"></i> akhtarcs0788@gmail.com</h6>
+        <div class="col-md-3 col-sm-6">
+          <div class="footer-menu" style="color: white">
+            <h2 class="footer-wid-title">User Navigation</h2>
+            <ul>
+              <li><a href="">My account</a></li>
+              <li><a href="">Order history</a></li>
+              <li><a href="">Wishlist</a></li>
+              <li><a href="">Vendor contact</a></li>
+              <li><a href="">Front page</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="footer-menu">
+            <h2 class="footer-wid-title">Categories</h2>
+            <ul>
+              <li><a href="">Mobile Phone</a></li>
+              <li><a href="">Home accesseries</a></li>
+              <li><a href="">LED TV</a></li>
+              <li><a href="">Computer</a></li>
+              <li><a href="">Gadets</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="footer-newsletter">
+            <h2 class="footer-wid-title">Newsletter</h2>
+            <p style="color: #999">
+              Sign up to our newsletter and get exclusive deals you wont find
+              anywhere else straight to your inbox!
+            </p>
+            <div class="newsletter-form" style="padding: 10 0">
+              <input type="email" placeholder="Type your email" />
+              <input type="submit" value="Subscribe" />
             </div>
           </div>
         </div>
-      </section>
-  
-  
-      <section class="footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <h5>&copy Copy Right 2020 Akhtar Hussain</h5>
-            </div>
-          </div>
-        </div>
-      </section>
-  
-</body>
+      </div>
+    </div>
+  </body>
 </html>

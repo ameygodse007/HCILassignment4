@@ -147,3 +147,90 @@ p a {
   color: black;
   text-decoration: none;
 }
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.product-f-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+.about {
+  font-family: lato;
+}
+.middle {
+  position: absolute;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  left: 15%;
+  background-color: #fb5951;
+  text-align: center;
+  opacity: 0;
+  font-size: 1.7ch;
+  transition: opacity 0.35s ease;
+}
+.i:hover {
+  background-color: #333;
+}
+
+.product-f-image:hover .image {
+  opacity: 0.3;
+}
+
+.product-f-image:hover .middle {
+  opacity: 1;
+}
+
+.product-f-image:hover {
+  background-color: #333;
+}
+
+input[type="text"] {
+  width: 130px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type="text"]:focus {
+  width: 100%;
+}
+
+.colImg {
+  width: 90%;
+
+  margin-left: -1.2rem;
+
+  opacity: 1;
+  display: block;
+
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.colImage:hover {
+  background-color: #333;
+  opacity: 0.3;
+}
