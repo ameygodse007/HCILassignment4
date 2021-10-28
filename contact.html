@@ -115,13 +115,31 @@
     </style>
   </head>
   <body>
-    <div class="topnav">
-      <a href="index.html">Home</a>
-      <a href="product.html">Products</a>
-      <a class="active" href="contact.html">Contact</a>
-      <a href="about.html">About</a>
-      <a href="login.html">Login</a>
-    </div>
+    <nav>
+      <ul
+        style="
+          height: 50px;
+          margin: 0;
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="product.html">Products</a>
+          <ul>
+            <li><a href="product.html">Smartphones</a></li>
+            <li><a href="led.html">LED's</a></li>
+            <li><a href="camera.html">Laptops</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
     <div
       class="contact"
       style="

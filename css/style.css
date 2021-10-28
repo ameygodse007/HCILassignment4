@@ -1,32 +1,81 @@
 * {
   margin: 0%;
-}
-
-.topnav {
-  background-color: #333;
-  overflow: hidden;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   text-decoration: none;
-  font-size: 17px;
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+a {
+  text-decoration: none;
 }
 
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #fb5951;
+nav .logo {
   color: white;
+  font-size: 33px;
+  font-weight: bold;
+  line-height: 70px;
+  padding-left: 110px;
+}
+nav {
+  height: 50px;
+  background: #333333;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
+}
+nav ul {
+  float: right;
+  margin-right: 30px;
+}
+nav ul li {
+  display: inline-block;
+  z-index: 999999;
+}
+nav ul li a {
+  color: white;
+  display: block;
+  padding: 0 15px;
+
+  font-size: 20px;
+  background: #333333;
+  transition: 0.5s;
+}
+nav ul li a:hover,
+nav ul li a.active {
+  color: white;
+  height: 50px;
+  background-color: #fb5951;
+}
+nav ul ul {
+  position: absolute;
+  top: 85px;
+  background-color: #fb5951;
+  opacity: 0;
+  visibility: hidden;
+}
+nav ul li:hover > ul {
+  top: 50px;
+  opacity: 1;
+  visibility: visible;
+  transition: 0.3s linear;
+}
+nav ul ul li {
+  width: 150px;
+  display: list-item;
+  position: relative;
+  border: 1px solid #333333;
+  border-top: none;
+}
+
+nav ul ul ul {
+  border-top: none;
+}
+nav ul ul ul li {
+  position: relative;
+  top: -70px;
+  left: 150px;
+}
+nav ul ul li a i {
+  margin-left: 45px;
 }
 
 .promo-area {
@@ -57,8 +106,16 @@
   color: #5a88ca;
 }
 
+html {
+  font-family: "Fredoka One", cursive;
+}
+
 body {
   font-family: Montserrat, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .product-option-shop {
